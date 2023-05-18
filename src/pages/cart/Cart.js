@@ -17,9 +17,9 @@ const Cart = () => {
       {state.map((item, index) => {
         return (
           <div className="card" key={index}>
-            <img src={item.image} alt="" />
-            <p>{item.title}</p>
-            <p>{item.quantity * item.price}</p>
+            
+            <p>{item.name}</p>
+            <p>{item.quantity * item.name2}</p>
             <div className="quantity">
               <button
                 onClick={() => dispatch({ type: "INCREASE", payload: item })}>
